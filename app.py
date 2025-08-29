@@ -10,7 +10,7 @@ import os
 # Load the trained model
 # ------------------------------
 try:
-    model = tf.keras.models.load_model("model.h5", compile=False)
+    model = tf.keras.models.load_model("model.keras", compile=False)
 except Exception as e:
     st.error(f"Error loading model: {e}")
     st.stop()
@@ -98,3 +98,4 @@ if prediction_proba > 0.5:
     st.warning("🚨 The customer is likely to churn.")
 else:
     st.success("✅ The customer is not likely to churn.")
+
