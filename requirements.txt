@@ -1,11 +1,10 @@
 tensorflow==2.20.0
 tensorboard==2.20.0
 
-protobuf==3.20.3
+streamlit>=1.30.0
 
 numpy
 pandas
 scikit-learn
 scikeras
 matplotlib
-streamlit
